@@ -89,7 +89,6 @@ header{
 
 @keyframes animation-hoverable {
     /*#0793f082*/
-    
     0%{ box-shadow: 0 0 10pt 2pt inset var(--color-shadow-hoverable);}
     25%{ box-shadow: 0 0 10pt 5pt inset var(--color-shadow-hoverable);}
     50%{ box-shadow: 0 0 10pt 10pt inset var(--color-shadow-hoverable);}
@@ -99,7 +98,7 @@ header{
 
 .main-article{
     min-height: 30rem;
-    padding: 3.5rem;
+    padding: 2rem 3.5rem;
     background-color: var(--color-900);
     margin-bottom: 2rem;
 }
@@ -108,13 +107,12 @@ header{
     text-align: left;
     font-size: 1.6em;
     font-weight: 500;
-    margin-top: 3%;
-    margin-bottom: 2%;
+    margin-top: 3rem;
+    margin-bottom: .5rem;
 }
 
 .main-article .subtitle{
     font-weight: 300;
-    /*font-size: 1.6em;*/
     margin: 1rem 0;
     text-decoration: underline;
 }
@@ -157,8 +155,8 @@ header{
 }
 
 .icon{
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
 
     background-color: var(--color-50);
     padding: 1rem;
@@ -212,10 +210,12 @@ header{
 }
 
 tag{
-    background-color: #32aefe;
+    background-color: #3c92e8;
     width: fit-content;
     padding: .3rem .6rem;
     border-radius: var(--borde-radius);
+    box-shadow: 
+    4pt 4pt 4pt 1pt var(--color-secondary);
     margin: .2rem;
 }
 
@@ -227,4 +227,8 @@ tag{
 .list-styled-line li > *{
     align-items: center;
     margin: 0 .5rem;
+}
+
+footer{
+    padding: 3.375rem;
 }
