@@ -1,0 +1,43 @@
+@import url("/index.css");
+
+@media (max-width: 1000px) {
+    html{
+        font-size: 12px;
+    }
+
+    .header-main{
+        left: 10%;
+    }
+
+    .nav-menu-list{
+        flex-direction: column;
+    }
+    .nav-menu-list .item{
+        align-self: center;
+        margin: .5rem 0;
+        min-height: .2rem;
+
+        padding: 1rem 0;
+    } 
+
+    .main-article{
+        padding: .5rem 0;
+    }
+
+
+    .container-flex-center, .container-flex-left{
+        flex-wrap: wrap;
+    }
+
+    
+
+    .card{
+        min-width: 1rem;
+        max-width: 75%;
+    }
+
+    .icon{
+        width: 80px;
+        height: 80px;
+    }
+}

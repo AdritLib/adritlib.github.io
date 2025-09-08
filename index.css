@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 html{
-    height: 100%;
     scroll-behavior: smooth;
+    height: 100%;
 }
 
-*{
+*, *::after, *::before{
     padding: 0;
     margin: 0;
     box-sizing: content-box;
@@ -32,10 +32,11 @@ body {
     --border-shadow-default: 0 0 10pt 5pt inset var(--color-950);
 
     color: var(--color-50);
-    background-color: var(--color-950);
+    background-color: #01112c;
     height: 100%;
 
     position: relative;
+    padding: 0 auto;
 }
 
 a{color: var(--color-500);}
@@ -44,26 +45,28 @@ ul{list-style-type: none;}
 header{
     height: 70%;
     position: relative;
+    background-image: linear-gradient(transparent 75%, rgba(0, 0, 0)), url("/img/img-bg-2_1.jpg");
+    box-shadow: 0 0 50px 50px rgba(0,0,0);
+    
+    background-size: cover;
+    background-position: center;
 }
 
 .header-main{
-    position: absolute;   
-    top: 45%;
-    left: 20%;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    padding: 4rem;
+    border-radius: var(--borde-radius);
 }
 
-.header-main > * {
-    margin-bottom: .8%;
-}
-
-.header-main .subtitle{
-    font-weight: 300;
-}
+.header-main > * { margin-bottom: .8%; }
+.header-main .subtitle{ font-weight: 300; }
 
 .nav-menu-list{
     display: flex;
     padding: 1rem;
-    margin-bottom: 5rem;
+    margin: 5rem 0;
 }
 
 .nav-menu-list .item{
@@ -73,22 +76,20 @@ header{
     color: var(--color-400);
     text-decoration: none;
     width: 100%;
-    font-size: 1.4em;
-    margin: 0 .5rem;
-    min-height: 4rem;
+    font-size: 1.6em;
+    margin: 0 .8rem;
+    min-height: 3rem;
     line-height: 4rem;
     
     transition: transform .2s ease-in-out;
-    animation: animation-hoverable 5s infinite;
 }
 
 .nav-menu-list .item:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     background-color: #03243d;
 }
 
 @keyframes animation-hoverable {
-    /*#0793f082*/
     0%{ box-shadow: 0 0 10pt 2pt inset var(--color-shadow-hoverable);}
     25%{ box-shadow: 0 0 10pt 5pt inset var(--color-shadow-hoverable);}
     50%{ box-shadow: 0 0 10pt 10pt inset var(--color-shadow-hoverable);}
@@ -99,7 +100,7 @@ header{
 .main-article{
     min-height: 30rem;
     padding: 2rem 3.5rem;
-    background-color: var(--color-900);
+    background-color: #094271af; /*#094271*/
     margin-bottom: 2rem;
 }
 
@@ -127,7 +128,8 @@ header{
     flex-direction: column;
     padding: 2rem;
     width: 100%;
-    min-width: 30rem;
+    min-width: min(5rem, 20rem);
+    max-width: 90%;
     background-color: var(--color-800);
     border-radius: var(--borde-radius);
     box-shadow: 
@@ -141,8 +143,12 @@ header{
     font-size: 1.3em;
 }
 
-.card-profession{
+.card-profession, .card-project{
     font-size: 1.2em;
+}
+
+.card-project .description{
+    margin: .8rem 0;
 }
 
 .container-flex-center{
@@ -165,23 +171,26 @@ header{
 }
 
 .icon-circle {
+    opacity: 0;
     background-color: var(--color-900);
     border: none;
     width: 80px;
     height: 80px;
-    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5rem;
     color: rgb(168, 213, 255);
-    padding: 1rem;
+    padding: min(32px, 1rem);
     animation: animation-hoverable 5s infinite;
     transition: 
     background-color ease-in-out .5s,
     color ease-in-out .5s,
+    opacity ease-in-out .5s,
     box-shadow ease-in-out .5s;
+    display: flex;
 }
 
+.w-75{ width: 75%; max-width: 75%;}
 .animation-key-up{
     animation: animation-key-up 1s infinite;
     animation-direction: alternate;
@@ -200,23 +209,28 @@ header{
 }
 
 @keyframes animation-key-up {
-    from {
-        translate: 0 1vw;
-    }
-
-    to {
-        translate: 0 0;
-    }
+    from { translate: 0 1vw; }
+    to { translate: 0 0; }
 }
 
-tag{
-    background-color: #3c92e8;
+ce-tag{
+    background-color: #4e5e6f;
+    color: #d4d4d4;
     width: fit-content;
     padding: .3rem .6rem;
     border-radius: var(--borde-radius);
     box-shadow: 
     4pt 4pt 4pt 1pt var(--color-secondary);
     margin: .2rem;
+}
+ce-tag[type="dark"]{
+    background-color: #23282d;
+}
+ce-tag[href]{
+    cursor: pointer;
+}
+ce-tag[href]:hover{
+    filter: brightness(1.5);
 }
 
 .list-styled-line li{
