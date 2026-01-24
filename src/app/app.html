@@ -1,0 +1,116 @@
+<header id="section__welcome">
+    <div class="header__content">
+        <h1>Adrian Valentino</h1>
+        <h2>Desarrollador Web Backend</h2>
+        <div class="header__data">
+            <h3>Stack Tecnológico</h3>
+            <div class="header__items">
+                <div [appIcon]="'Java'" class="icon__stored bg-not"></div>
+                <div [appIcon]="'Spring'" class="icon__stored bg-not"></div>
+                <div [appIcon]="'JavaScript'" class="icon__stored bg-not"></div>
+            </div>
+        </div>
+    </div>
+</header>
+<nav>
+    <a href="#section__welcome" class="nav__item">Bienvenido</a>
+    <a href="#section__projects" class="nav__item">Mis Proyectos</a>
+    <a href="#section__aboutme" class="nav__item">Sobre mi</a>
+    <a href="#section__studies" class="nav__item">Mis Estudios</a>
+</nav>
+<main>
+    <section id="section__projects">
+        <h3 class="section__title">Mis Proyectos</h3>
+        <article class="card__container">
+            <div class="card card-highlight">
+                <h4 class="card__title">Index Archimeid</h4>
+                <p>Un sistema de gestión para proyectos narrativos.</p>
+                <div class="card__tags">
+                    <span class="badge bg-gold">Descatado</span>
+                    <span class="badge">Spring Boot</span>
+                </div>
+                <a href="" [appIcon]="'Github'" title="Ir a repositorio" class="icon__stored btn"><span>Ir a repositorio</span></a>
+            </div>
+            <div class="card">
+                <h4 class="card__title">Simple Converter</h4>
+                <p>API de conversión de divisas internacionales.</p>
+                <div class="card__tags">
+                    <span class="badge">C#</span>
+                    <span class="badge">ASP .NET Core</span>
+                </div>
+                <a href="" [appIcon]="'Github'" title="Ir a repositorio" class="icon__stored btn"><span>Ir a repositorio</span></a>
+            </div>
+            <div class="card">
+                <h4 class="card__title">To Do List</h4>
+                <p>Un proyecto de pruena para este campo lore</p>
+                <div class="card__tags">
+                    <span class="badge">PHP</span>
+                </div>
+                <a href="" [appIcon]="'Github'" title="Ir a repositorio" class="icon__stored btn"><span>Ir a repositorio</span></a>
+            </div>
+        </article>
+    </section>
+    <section id="section__aboutme">
+        <h3 class="section__title">Sobre mi</h3>
+        <article>
+            <h3>Qué hago</h3>
+            <p>
+                Me centro de forma técnica en el desarrollo y mantenimiento de software web
+                backend, enfoco especificamente a tecnologías como Spring Boot, 
+            </p>
+        </article>
+        <article>
+            <h3>Mis planes</h3>
+            <p>Busco emprender en la rama de tecnologías de la información tanto para profundizar mis conocimientos como para mejorar mis habilidades técnicas.</p>
+            <br>
+            <p>Estoy preparandome para continuar mis estudios en Ingeniería de Software.</p>
+        </article>
+    </section>
+    <section>
+        <article>
+            <h3 class="section__subtitle">Conocimientos</h3>
+            <h4>Tecnologías principales</h4>
+            <div class="header__items bg-darkgray">
+                <div [appIcon]="'JavaScript'" class="icon__stored data"><p>JavaScript</p></div>
+                <div [appIcon]="'React'" class="icon__stored data"><p>React</p></div>
+                <div [appIcon]="'Spring'" class="icon__stored data"><p>Spring Boot</p></div>
+                <div [appIcon]="'Java'" class="icon__stored data"><p>Java</p></div>
+                <div [appIcon]="'Mysql'" class="icon__stored data"><p>MySQL</p></div>
+            </div>
+            <h4>En aprendizaje o en mejora</h4>
+            <div class="header__items bg-darkgray">
+                <div [appIcon]="'SQLServer'" class="icon__stored data secondary"><p>SQL Server</p></div>
+                <div [appIcon]="'CSharp'" class="icon__stored data secondary"><p>CSharp</p></div>
+                <div [appIcon]="'PHP'" class="icon__stored data secondary"><p>PHP</p></div>
+                <div [appIcon]="'Angular'" class="icon__stored data secondary"><p>Angular</p></div>
+                <div [appIcon]="'AndroidStudio'" class="icon__stored data secondary"><p>Android Studio</p></div>
+            </div>
+        </article>
+    </section>
+    <section id="section__contacts">
+        <h3 class="section__subtitle">Mis redes de contacto</h3>
+        <article class="flex-container">
+            <a target="_blank" href="https://www.linkedin.com/in/adrian-campos-miguel-812267232?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B6TV4mcLYRNmcnPFjjlV0sw%3D%3D" class="selectable vertical-flex icon__stored data bg-blue" title="Mi perfil de LinkedIn" [appIcon]="'Linkedin'"><p>Perfil de LinkedIn</p></a>
+            <a target="_blank" href="https://github.com/AdritLib" class="selectable vertical-flex icon__stored data bg-dark" title="Mi perfil de Github" [appIcon]="'Github'"><p>Repositorio Github</p></a>
+            <a target="_blank" href="./../assets/cv_adrian_valentino.txt" download="CV_Adrian_Valentino.pdf" class="selectable vertical-flex icon__stored data bg-green" title="Mi perfil de Github" [appIcon]="'CV'"><p>Descargar CV</p></a>
+        </article>
+    </section>
+    <section id="section__studies">
+        <h3 class="section__title">Mis Estudios</h3>
+        <article class="card__container">
+            <div class="card">
+                <h4 class="card__title">Estudiante de Computación e Informática</h4>
+                <span>Actualmente cursando</span>
+                <p>Cibertec S.A.C.</p>
+            </div>
+            <div class="card">
+                <h4 class="card__title">Wetalk UPC Inglés Básico</h4>
+                <span>Cursado el 2025</span>
+                <p>Universidad UPC, nivel 4</p>
+            </div>
+        </article>
+    </section>
+</main>
+<footer>
+    &copy; Adrian Valentino - 2025
+</footer>

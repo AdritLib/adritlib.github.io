@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap');
+html{
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    scrollbar-color: rgb(3, 59, 157) rgb(11, 29, 60);;
+    background-color: rgb(11, 29, 60);
+}
+body{
+    background-color: rgb(0, 31, 71);
+    box-shadow: 0px 0px 20px 20px rgba(26, 86, 169, 0.75);
+    color: white;
+    padding: 0;
+    margin: 0;
+
+    --border: 1pt solid white;
+    --border-radius: .3rem;
+    --padding: .2cqh .5cqw;
+    --font-family: "Manjari", sans-serif;
+    --badge-bg-color: #004cb0;
+    --badge-font-color: #fff;
+    font-family: var(--font-family);
+    animation: fade-in .5s;
+    min-height: 100vh;
+    width: 100%;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+img{
+    width: 40pt;
+    user-select: none;
+}
+
+.tooltip {
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: -3rem;
+    left: -10%;
+    transform: translateX(-5%);
+    display: none;
+    padding: 4px 12px;
+    background-color: #0048ff;
+    color: #fff;
+    border-radius: 4px;
+    white-space: wrap;
+    min-width: fit-content;
+    z-index: 2;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tooltip:hover::after {
+    display: block;
+}
