@@ -2,7 +2,8 @@
 html{
     min-height: 100vh;
     scroll-behavior: smooth;
-    scrollbar-color: rgb(3, 59, 157) rgb(11, 29, 60);;
+    scrollbar-color: rgb(3, 59, 157) rgb(11, 29, 60);
+    scrollbar-width: none;
     background-color: rgb(11, 29, 60);
 }
 body{

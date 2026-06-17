@@ -1,7 +1,7 @@
 import { Directive, ElementRef, Input, OnInit, Renderer2  } from '@angular/core';
 
 @Directive({
-  selector: '[appIcon]',
+  selector: '[icon]',
   standalone: true
 })
 export class IconElementDirective implements OnInit{
@@ -27,7 +27,7 @@ export class IconElementDirective implements OnInit{
     ["CV", this.iconRoot('person-badge')],
   ]);
 
-  @Input('appIcon') iconKey!: string;
+  @Input('icon') iconKey!: string;
 
   constructor(private el: ElementRef, private renderer: Renderer2) {}
 

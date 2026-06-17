@@ -14,7 +14,6 @@ header {
     background-size: cover;
     border-radius: 0;
     color: white;
-    box-shadow: 0 0 50px 50px rgba(0,0,0);
     animation: header-animation 5s infinite alternate-reverse;
 }
 .header__items img{
@@ -26,10 +25,10 @@ header {
 
 @keyframes header-animation {
     0% {
-        box-shadow: inset 0 0 40px 20px rgba(0, 4, 33, 0.7);
+        box-shadow: inset 0 0 40px 10px rgba(0, 4, 33, 0.5);
     }
     100%{
-        box-shadow: inset 0 0 40px 20px rgb(0, 59, 103);
+        box-shadow: inset 0 0 40px 10px rgb(0, 59, 103, .6);
     }
 }
 
@@ -43,7 +42,7 @@ nav {
     align-items: center;
     justify-content: space-evenly;
     gap: 20px;
-    min-height: 3em;
+    min-height: 4em;
     padding: .5em 2em;
 }
 .nav__item{
@@ -64,8 +63,6 @@ nav {
 }
 
 .header__content{
-    background-color: rgba(0, 0, 0, 0.4);
-    box-shadow: 0 0 30px 80px rgba(0, 0, 0, 0.4);
     width: 80%;
     margin: 0 auto;
     position: relative;
@@ -130,7 +127,7 @@ section{
     row-gap: 3em;
 }
 .card{
-    background-color: #18379b98;
+    background-color: #1e337998;
     border-radius: var(--border-radius);
     display: grid;
     grid-template-rows: subgrid;
@@ -163,11 +160,11 @@ section{
     color: white;
 }
 @keyframes animation-hightlight {
-    0%{
-        box-shadow: inset 0 0 2px 0px rgb(255, 208, 0);
+    to{
+        box-shadow: inset 0 0 2px 0px rgba(255, 232, 128, 0.5);
     }
-    100%{
-        box-shadow: inset 0 0 3px 3px rgb(255, 208, 0);
+    from{
+        box-shadow: inset 0 0 3px 4px rgba(255, 208, 0, 0.35);
     }
 }
 

@@ -1,5 +1,5 @@
 import { Component, signal  } from '@angular/core';
-import { IconElementDirective } from './components/icon-element/IconElementDirective';
+import { IconElementDirective } from './directives/IconElementDirective';
 
 @Component({
   selector: 'app-root',
