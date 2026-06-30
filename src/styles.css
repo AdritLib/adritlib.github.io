@@ -7,7 +7,7 @@ html{
     background-color: rgb(11, 29, 60);
 }
 body{
-    background-color: rgb(0, 31, 71);
+    background-color: #0A1128;
     box-shadow: 0px 0px 20px 20px rgba(26, 86, 169, 0.75);
     color: white;
     padding: 0;
@@ -68,4 +68,19 @@ img{
 
 .tooltip:hover::after {
     display: block;
+}
+
+.gap{
+    display: flex;
+    gap: 8px;
+}
+
+a{
+    font-family: var(--font-family);
+    font-size: 1.15rem;
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
 }

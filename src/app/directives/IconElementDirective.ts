@@ -23,8 +23,7 @@ export class IconElementDirective implements OnInit{
     ["VisualStudioCode", this.iconRoot('visualstudiocode')],
     ["Trello", this.iconRoot('trello')],
     ["Angular", this.iconRoot('angular')],
-    ["AndroidStudio", this.iconRoot('androidstudio')],
-    ["CV", this.iconRoot('person-badge')],
+    ["AndroidStudio", this.iconRoot('androidstudio')]
   ]);
 
   @Input('icon') iconKey!: string;
