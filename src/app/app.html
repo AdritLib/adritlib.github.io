@@ -1,14 +1,18 @@
 <header id="section__welcome">
     <div class="header__content">
-        <h1>Adrian Valentino</h1>
-        <h2>Desarrollador Web Backend</h2>
+        <h1 class="font-manjari">Adrian Valentino</h1>
+        <h2 class="font-manjari">Desarrollador Web Backend</h2>
         <div class="header__data">
-            <h3>Stack Tecnológico</h3>
+            <h3 class="font-manjari">Stack Tecnológico</h3>
             <div class="header__items">
-                <div [icon]="'Java'" class="icon__stored bg-not"></div>
-                <div [icon]="'Spring'" class="icon__stored bg-not"></div>
-                <div [icon]="'JavaScript'" class="icon__stored bg-not"></div>
+                <div [icon]="'Java'" class="icon__stored bg-darkgray bs-darkgray"></div>
+                <div [icon]="'Spring'" [tooltip]="'Spring Boot Framework'" class="icon__stored bg-darkgray bs-darkgray"></div>
+                <div [icon]="'Mysql'" [tooltip]="'MySQL 8.0 CE'" class="icon__stored bg-darkgray bs-darkgray"></div>
             </div>
+        </div>
+        <div class="header__data gap">
+            <div target="_blank" class="btn btn-dark icon__stored data" [tooltip]="'Ver mi repositorio de GitHub'" href="https://github.com/AdritLib" [icon]="'Github'" [text]="'Mi GitHub'"></div>
+            <a target="_blank" class="btn btn-cyan" [icon]="'Linkedin'" [tooltip]="'Ver mi perfil de LinkedIn'" [text]="'Mi LinkedIn'" href="https://www.linkedin.com/in/adrian-campos-miguel-812267232?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B6TV4mcLYRNmcnPFjjlV0sw%3D%3D"></a>
         </div>
     </div>
 </header>
@@ -19,66 +23,81 @@
 </nav>
 <main>
     <section id="section__aboutme">
-        <h3 class="section__title">Sobre mi</h3>
+        <h3 class="section__title">Sobre mí</h3>
         <article>
             <h3>Qué hago</h3>
             <p>
-                Me centro de forma técnica en el desarrollo y mantenimiento de software web
+                Me especializo en el desarrollo y mantenimiento de software web
                 backend, me centro en en desarrollo con lenguajes de programación de fuerte tipado y robusto como Java.
             </p>
             <br>
             <p>
-                Tambien tengo conocimientos técnicos variados sobre tecnologías de la información.
+                Tambien tengo conocimientos básicos sobre diseño web (UI/UX). A parte de conocimiento en seguridad y salud en el trabajo.
             </p>
         </article>
         <article>
             <h3>Mis planes</h3>
             <p>Busco emprender en la rama de tecnologías de la información tanto para profundizar en soluciones como para mejorar mis habilidades técnicas.</p>
             <br>
-            <p>Estoy preparandome para continuar mis estudios en Ingeniería de Software.</p>
-        </article>
-    </section>
-    <section>
-        <article>
-            <h3 class="section__subtitle">Conocimientos</h3>
-            <h4>Tecnologías principales</h4>
-            <div class="header__items bg-darkgray">
-                <div [icon]="'JavaScript'" class="icon__stored data"><p>JavaScript</p></div>
-                <div [icon]="'React'" class="icon__stored data"><p>React</p></div>
-                <div [icon]="'Spring'" class="icon__stored data"><p>Spring Boot</p></div>
-                <div [icon]="'Java'" class="icon__stored data"><p>Java</p></div>
-                <div [icon]="'Mysql'" class="icon__stored data"><p>MySQL</p></div>
-            </div>
-            <h4>En aprendizaje</h4>
-            <div class="header__items bg-darkgray">
-                <div [icon]="'SQLServer'" class="icon__stored data secondary"><p>SQL Server</p></div>
-                <div [icon]="'CSharp'" class="icon__stored data secondary"><p>CSharp</p></div>
-                <div [icon]="'PHP'" class="icon__stored data secondary"><p>PHP</p></div>
-                <div [icon]="'Angular'" class="icon__stored data secondary"><p>Angular</p></div>
-                <div [icon]="'AndroidStudio'" class="icon__stored data secondary"><p>Android Studio</p></div>
-            </div>
+            <p>Estoy preparándome para continuar mis estudios en Ingeniería de Software.</p>
         </article>
     </section>
     <section id="section__projects">
         <h3 class="section__title">Mis Proyectos</h3>
         <article class="card__container">
             <div class="card">
-                <h4 class="card__title">Sistema Control de Buses</h4>
-                <p>Aplicación web gestor de transporte público.</p>
+                <div class="card__frontpage">
+                    <img alt="">
+                </div>
+                <div class="card__title">
+                    <h4>To Do List</h4>
+                </div>
+                <p class="card__content">Una aplicación de listado de que haceres sencillo.</p>
+                <div class="card__tags">
+                    <span class="badge">PHP</span>
+                </div>
+                <div class="card__content">
+                    <a href="" class="btn">Ver demo</a>
+                    <a href="" class="btn btn-dark">Ir a repositorio</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__frontpage">
+                    <img src="../../assets/images/sistemabuses_screen1.JPG" alt="">
+                </div>
+                <div class="card__title">
+                    <h4>Sistema Control de Buses</h4>
+                </div>
+                <p class="card__content">Aplicación web de gestión de flota de buses para el transporte público.</p>
                 <div class="card__tags">
                     <span class="badge">Java</span>
                     <span class="badge">Spring</span>
                 </div>
-                <a href="" [icon]="'Github'" title="Ir a repositorio" class="icon__stored btn"><span>Ir a repositorio</span></a>
-                <a href="">Ver demo</a>
-            </div>
-            <div class="card">
-                <h4 class="card__title">To Do List</h4>
-                <p>Un proyecto de pruena para este campo lore</p>
-                <div class="card__tags">
-                    <span class="badge">PHP</span>
+                <div class="card__content">
+                    <a href="" class="btn btn-dark">Ir a repositorio</a>
                 </div>
-                <a href="" [icon]="'Github'" title="Ir a repositorio" class="icon__stored btn"><span>Ir a repositorio</span></a>
+            </div>
+        </article>
+    </section>
+    <section>
+        <h3 class="section__title">Conocimientos</h3>
+        <article>
+            <h4 class="section__subtitle">Tecnologías principales</h4>
+            <div class="icon__stored-row">
+                <div [icon]="'Spring'" [tooltip]="'Spring Boot Framework'" class="icon__stored data" [text]="'Spring Boot'"></div>
+                <div [icon]="'Java'" class="icon__stored data" [text]="'Java'"></div>
+                <div [icon]="'Mysql'" class="icon__stored data" [tooltip]="'MySQL 8.0 CE'" [text]="'MySQL'"></div>
+                <div [icon]="'JavaScript'" class="icon__stored data" [text]="'JavaScript'"></div>
+                <div [icon]="'Angular'" class="icon__stored data" [text]="'Angular'"></div>
+                
+            </div>
+            <h4 class="section__subtitle">En aprendizaje</h4>
+            <div class="icon__stored-row">
+                <div [icon]="'SQLServer'" [tooltip]="'Microsoft SQL Server'" class="icon__stored data secondary" [text]="'SQL Server'"></div>
+                <div [icon]="'CSharp'" [tooltip]="'C#'" class="icon__stored data secondary" [text]="'C#'"></div>
+                <div [icon]="'PHP'" class="icon__stored data secondary" [text]="'PHP'"></div>
+                <div [icon]="'React'" class="icon__stored data secondary" [text]="'React'"></div>
+                <div [icon]="'AndroidStudio'" [tooltip]="'Android Studio'" class="icon__stored data secondary" [text]="'Android Studio'"></div>
             </div>
         </article>
     </section>
@@ -86,12 +105,19 @@
         <h3 class="section__title">Mis Estudios</h3>
         <article class="card__container">
             <div class="card">
-                <h4 class="card__title">Carrera de Computación e Informática</h4>
-                <p>Cibertec S.A.C.</p>
+                <h4 class="card__title">Computación e Informática</h4>
+                <p>Egresado en Carrera Técnica cursado el 2023 hasta 2026</p>
+                <p>Carrera instruida por Cibertec I.E.S</p>
             </div>
             <div class="card">
-                <h4 class="card__title">Wetalk UPC Inglés Básico</h4>
-                <p>Universidad UPC, nivel 4</p>
+                <h4 class="card__title">Wetalk de la UPC</h4>
+                <p>Nivel 4, Intermedio cursado el 2024 hasta 2025</p>
+                <p>Programa de Inglés de la Universidad Peruana de Ciencias Aplicadas</p>
+            </div>
+            <div class="card">
+                <h4 class="card__title">Supervisor de SST</h4>
+                <p>Certificado por el Colegio de Ingenieros del Perú</p>
+                <p>Curso de capacitación realizado por Calgesa</p>
             </div>
         </article>
     </section>
