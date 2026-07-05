@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 html{
     min-height: 100vh;
     scroll-behavior: smooth;
@@ -91,6 +97,18 @@ img{
     display: block;
 }
 
+h3, h4, h5{
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+p{ font-size: 1.2em;}
+ul{list-style: none;}
+h1{font-size: 3.6em;}
+
+.font-manjari{
+    font-family: 'Manjari', serif;
+}
+
 .gap{
     display: flex;
     gap: 8px;
@@ -104,4 +122,50 @@ a{
 }
 a:hover{
     text-decoration: underline;
+}
+
+.btn,.selectable{ 
+    transition: transform .2s ease-in-out;
+}
+.btn:hover,.selectable:hover{ 
+    transform: translate(0, -.5vw); 
+    outline: 2px solid #0099ff;
+}
+.btn{
+    --bg-btn-color: #0062ff;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: fit-content;
+    background-color: var(--bg-btn-color);
+    border-radius: var(--border-radius);
+    padding: .5rem;
+}
+.btn-dark{
+    --bg-btn-color: rgb(23, 23, 23);
+}
+.btn-cyan{
+    --bg-btn-color: #0076b2;
+}
+
+.bg-blue { background-color: #024a91; }
+.bg-blue > *, .bg-dark > *{ color: white; }
+.bg-dark{ background-color: rgb(23, 23, 23); }
+.bg-green{ background-color: rgb(0, 89, 0);}
+
+.bg-darkgray{
+    background-color: #12112762;
+}
+.bs-darkgray{
+    box-shadow: 0 0 30px 20px #12112762;
+}
+.text-graylight{
+    color: rgb(190, 190, 190);
+}
+
+.secondary{
+    filter: grayscale(.7);
+}
+
+footer{
+    padding: 2rem;
 }
