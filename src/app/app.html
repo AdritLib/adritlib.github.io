@@ -1,4 +1,4 @@
-<header id="section__welcome">
+<header id="bienvenido">
     <div class="header__content">
         <h1 class="font-manjari">Adrian Valentino</h1>
         <h2 class="font-manjari text-graylight">Desarrollador Web Backend</h2>
@@ -6,44 +6,52 @@
             <h3 class="font-manjari">Stack Tecnológico</h3>
             <div class="header__items">
                 <div [icon]="'Java'" class="icon__stored bg-darkgray bs-darkgray"></div>
-                <div [icon]="'Spring'" [tooltip]="'Spring Boot Framework'" class="icon__stored bg-darkgray bs-darkgray"></div>
-                <div [icon]="'Mysql'" [tooltip]="'MySQL 8.0 CE'" class="icon__stored bg-darkgray bs-darkgray"></div>
+                <div [icon]="'Spring'" class="icon__stored bg-darkgray bs-darkgray"></div>
+                <div [icon]="'Mysql'" class="icon__stored bg-darkgray bs-darkgray"></div>
             </div>
         </div>
-        <div class="gap">
-            <div target="_blank" class="btn btn-dark icon__stored data" [tooltip]="'Ver mi repositorio de GitHub'" href="https://github.com/AdritLib" [icon]="'Github'" [text]="'Mi GitHub'"></div>
-            <a target="_blank" class="btn btn-cyan" [icon]="'Linkedin'" [tooltip]="'Ver mi perfil de LinkedIn'" [text]="'Mi LinkedIn'" href="https://www.linkedin.com/in/adrian-campos-miguel-812267232?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B6TV4mcLYRNmcnPFjjlV0sw%3D%3D"></a>
+        <div class="header__items gap" #puntoLimite>
+            <div target="_blank" class="btn btn-dark icon__stored data" [tooltip]="'Ver mi repositorio de GitHub'" [iconSize]="'size-sm'" href="https://github.com/AdritLib" [icon]="'Github'" [text]="'Mi GitHub'"></div>
+            <a target="_blank" class="btn btn-cyan" [icon]="'Linkedin'" [tooltip]="'Ver mi perfil de LinkedIn'" [iconSize]="'size-sm'" [text]="'Mi LinkedIn'" href="https://www.linkedin.com/in/adrian-campos-miguel-812267232?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B6TV4mcLYRNmcnPFjjlV0sw%3D%3D"></a>
         </div>
     </div>
 </header>
 <nav>
-    <a href="#section__aboutme" class="nav__item">Sobre mi</a>
-    <a href="#section__projects" class="nav__item">Mis Proyectos</a>
-    <a href="#section__studies" class="nav__item">Mis estudios</a>
+    <a href="#sobremi" class="nav__item">Sobre mí</a>
+    <a href="#proyectos" class="nav__item">Mis Proyectos</a>
+    <a href="#estudios" class="nav__item">Mis estudios</a>
 </nav>
 <main>
-    <section id="section__aboutme">
-        <h3 class="section__title">Sobre mí</h3>
+    <section id="sobremi">
+        <h3 class="section__title">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="size-sm" viewBox="0 0 16 16">
+                <path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
+                <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/>
+                <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/>
+            </svg>
+            Sobre mí
+        </h3>
         <article>
             <h3>Qué hago</h3>
             <p>
                 Me especializo en el desarrollo y mantenimiento de software web
-                backend, me centro en en desarrollo con lenguajes de programación de fuerte tipado y robusto como Java.
-            </p>
-            <br>
-            <p>
-                Tambien tengo conocimientos básicos sobre diseño web (UI/UX). A parte de conocimiento en seguridad y salud en el trabajo.
+                backend, me centro en en desarrollo con lenguajes de programación de tipado fuerte y robusto, como Java.
             </p>
         </article>
         <article>
             <h3>Mis planes</h3>
-            <p>Busco emprender en la rama de tecnologías de la información tanto para profundizar en soluciones como para mejorar mis habilidades técnicas.</p>
+            <p>Busco emprender en la rama de tecnologías de la información tanto, para profundizar en soluciones como para mejorar mis habilidades técnicas.</p>
             <br>
             <p>Estoy preparándome para continuar mis estudios en Ingeniería de Software.</p>
         </article>
     </section>
-    <section id="section__projects">
-        <h3 class="section__title">Mis Proyectos</h3>
+    <section id="proyectos">
+        <h3 class="section__title">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-sm" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+            </svg>
+            Mis Proyectos
+        </h3>
         <article class="card__container">
             <div class="card">
                 <div class="card__frontpage">
@@ -52,7 +60,7 @@
                 <div class="card__title">
                     <h4>To Do List</h4>
                 </div>
-                <p class="card__content">Una aplicación de listado de que haceres sencillo.</p>
+                <p class="card__content">Una aplicación de listado de quehaceres sencillo.</p>
                 <div class="card__tags">
                     <span class="badge">PHP</span>
                 </div>
@@ -62,13 +70,15 @@
                 </div>
             </div>
             <div class="card">
-                <div class="card__frontpage">
-                    <img src="../../assets/images/sistemabuses_screen1.JPG" alt="">
+                <div class="card__frontpage carousel">
+                    <img class="carousel-item" src="../../assets/images/sistemabuses_screen1.JPG" alt="">
+                    <img class="carousel-item" src="../../assets/images/sistemabuses_screen1.JPG" alt="">
+                    <img class="carousel-item" src="../../assets/images/sistemabuses_screen1.JPG" alt="">
                 </div>
                 <div class="card__title">
                     <h4>Sistema Control de Buses</h4>
                 </div>
-                <p class="card__content">Aplicación web de gestión de flota de buses para el transporte público.</p>
+                <p class="card__content">Aplicación web de gestión de flotas de buses para el transporte público.</p>
                 <div class="card__tags">
                     <span class="badge">Java</span>
                     <span class="badge">Spring</span>
@@ -79,30 +89,14 @@
             </div>
         </article>
     </section>
-    <section>
-        <h3 class="section__title">Conocimientos</h3>
-        <article>
-            <h4 class="section__subtitle">Tecnologías principales</h4>
-            <div class="icon__stored-row">
-                <div [icon]="'Spring'" [tooltip]="'Spring Boot Framework'" class="icon__stored data" [text]="'Spring Boot'"></div>
-                <div [icon]="'Java'" class="icon__stored data" [text]="'Java'"></div>
-                <div [icon]="'Mysql'" class="icon__stored data" [tooltip]="'MySQL 8.0 CE'" [text]="'MySQL'"></div>
-                <div [icon]="'JavaScript'" class="icon__stored data" [text]="'JavaScript'"></div>
-                <div [icon]="'Angular'" class="icon__stored data" [text]="'Angular'"></div>
-                
-            </div>
-            <h4 class="section__subtitle">En aprendizaje</h4>
-            <div class="icon__stored-row">
-                <div [icon]="'SQLServer'" [tooltip]="'Microsoft SQL Server'" class="icon__stored data secondary" [text]="'SQL Server'"></div>
-                <div [icon]="'CSharp'" [tooltip]="'C#'" class="icon__stored data secondary" [text]="'C#'"></div>
-                <div [icon]="'PHP'" class="icon__stored data secondary" [text]="'PHP'"></div>
-                <div [icon]="'React'" class="icon__stored data secondary" [text]="'React'"></div>
-                <div [icon]="'AndroidStudio'" [tooltip]="'Android Studio'" class="icon__stored data secondary" [text]="'Android Studio'"></div>
-            </div>
-        </article>
-    </section>
-    <section id="section__studies">
-        <h3 class="section__title">Mis Estudios</h3>
+    <section id="estudios">
+        <h3 class="section__title">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-sm" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5z"/>
+            </svg>
+            Mis Estudios
+        </h3>
         <article class="card__container">
             <div class="card">
                 <h4 class="card__title">Computación e Informática</h4>
@@ -121,11 +115,37 @@
             </div>
         </article>
     </section>
+    <section>
+        <h3 class="section__title">
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-sm" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
+            </svg>
+            Conocimientos
+        </h3>
+        <article>
+            <h4 class="section__subtitle">Tecnologías principales</h4>
+            <div class="icon__stored-row">
+                <div [icon]="'Spring'" [tooltip]="'Spring Boot Framework'" class="icon__stored data" [text]="'Spring Boot'"></div>
+                <div [icon]="'Java'" [tooltip]="'Java'" class="icon__stored data" [text]="'Java'"></div>
+                <div [icon]="'Mysql'" [tooltip]="'MySQL CE'" class="icon__stored data" [text]="'MySQL'"></div>
+                <div [icon]="'JavaScript'" [tooltip]="'JavaScript'" class="icon__stored data" [text]="'JavaScript'"></div>
+                <div [icon]="'SQLServer'" [tooltip]="'Microsoft SQL Server'" class="icon__stored data" [text]="'SQL Server'"></div>
+                <div [icon]="'CSharp'" [tooltip]="'C#'" class="icon__stored data" [text]="'C#'"></div>
+            </div>
+            <h4 class="section__subtitle">En aprendizaje</h4>
+            <div class="icon__stored-row">
+                <div [icon]="'Angular'" class="icon__stored data secondary" [text]="'Angular'"></div>
+                <div [icon]="'React'" class="icon__stored data secondary" [text]="'React'"></div>
+                <div [icon]="'AndroidStudio'" class="icon__stored data secondary" [text]="'Android Studio'"></div>
+            </div>
+        </article>
+    </section>
+    @if(botonVisible()){
+    <a href="#bienvenido" id="arrow-to-welcome">
+        <span>^</span>
+    </a>
+    }
 </main>
 <footer class="flex-container">
     <p>&copy; Adrian Valentino - 2026</p>
-    <article class="gap">
-        <a target="_blank" href="https://github.com/AdritLib">Perfil de GitHub</a>
-        <a target="_blank" href="https://www.linkedin.com/in/adrian-campos-miguel-812267232?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B6TV4mcLYRNmcnPFjjlV0sw%3D%3D">Perfil de LinkedIn</a>
-    </article>
 </footer>

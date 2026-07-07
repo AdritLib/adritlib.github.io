@@ -5,8 +5,8 @@ import { Directive, ElementRef, Input, OnInit, Renderer2  } from '@angular/core'
   standalone: true
 })
 export class IconElementDirective implements OnInit{
-  private readonly iconRoot = (icon: string) => {
-    return `<img src="./../../../assets/icons/${icon}.svg" class="icon-size"/>`
+  private readonly iconRoot = (icon: string, size: string) => {
+    return `<img src="./../../../assets/icons/${icon}.svg" class="icon-size ${size}"/>`
   }
   private readonly icons = new Map<string, string>([
     ["Java", 'java'],
@@ -23,12 +23,14 @@ export class IconElementDirective implements OnInit{
     ["VisualStudioCode", 'visualstudiocode'],
     ["Trello", 'trello'],
     ["Angular", 'angular'],
-    ["AndroidStudio", 'androidstudio']
+    ["AndroidStudio", 'androidstudio'],
+    ["sobremi", "sobremi"]
   ]);
 
   @Input('icon') iconKey!: string;
   @Input('text') iconText!: string;
   @Input('tooltip') iconTooltip!: string;
+  @Input('iconSize') iconSize: string = '';
 
   constructor(private el: ElementRef, private renderer: Renderer2) {}
 
@@ -45,10 +47,14 @@ export class IconElementDirective implements OnInit{
     this.renderer.addClass(span, 'bg-not');
     this.renderer.addClass(span, 'vertical-flex');
 
-    this.renderer.setAttribute(span, 'data-tooltip', this.iconTooltip ? this.iconTooltip : this.iconKey );
-    this.renderer.addClass(span, 'tooltip');
+    if(this.iconTooltip){
+      this.renderer.setAttribute(span, 'data-tooltip', this.iconTooltip ? this.iconTooltip : this.iconKey );
+      this.renderer.addClass(span, 'tooltip');
+    }
     
-    span.innerHTML = this.iconText ? this.iconRoot(iconSvg) + `<p class="icon-text">${this.iconText}</p>` : this.iconRoot(iconSvg);
+    span.innerHTML = this.iconText ? 
+    this.iconRoot(iconSvg, this.iconSize) + `<p class="icon-text">${this.iconText}</p>` :
+    this.iconRoot(iconSvg, this.iconSize);
       //this.renderer.insertBefore(this.el.nativeElement, span, this.el.nativeElement.firstChild);
   }
 }
